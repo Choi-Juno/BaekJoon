@@ -7,6 +7,4 @@ for i in range(N):
         if a[i] != b[i]:
             print("ERROR")
             break
-        else:
-            print("OK")
-            break
+    print("OK")
