@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def create_problem_dirs():
-    for i in range(1, 33):  # 1000 ~ 32000
+    for i in range(1, 35):  # 1000 ~ 34000
         problem_dir = Path(f"problems/{i*1000:05d}")
         problem_dir.mkdir(parents=True, exist_ok=True)
 
