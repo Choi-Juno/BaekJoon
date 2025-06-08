@@ -1,11 +1,12 @@
-from collections import deque
-
 N = int(input())
 
-numbers = deque(range(1, N + 1))
+numbers = [i for i in range(1, N + 1)]
 
-while len(numbers) > 1:
-    numbers.popleft()  # 첫 번째 카드 제거
-    numbers.append(numbers.popleft())  # 두 번째 카드를 맨 뒤로 이동
+count = 0
 
-print(numbers[0])
+while True:
+    if len(numbers) == 1:
+        print(numbers[0])
+    else:
+        numbers.pop(0)
+        numbers.append(numbers.pop(0))
